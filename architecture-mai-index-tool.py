@@ -1,7 +1,6 @@
 import os
 from typing import List, cast
 import chainlit as cl
-import yaml
 from autogen_agentchat.agents import AssistantAgent
 from autogen_agentchat.base import Response
 from autogen_agentchat.messages import ModelClientStreamingChunkEvent, TextMessage
@@ -9,7 +8,9 @@ from autogen_core import CancellationToken
 from autogen_core.models import ChatCompletionClient
 from azure.search.documents import SearchClient
 from azure.core.credentials import AzureKeyCredential
+from autogen_agentchat.teams import RoundRobinGroupChat
 from dotenv import load_dotenv
+import yaml
 
 load_dotenv()
 

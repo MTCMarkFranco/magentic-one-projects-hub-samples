@@ -1,6 +1,9 @@
-autogen-agentchat==0.4.8 
-autogen-ext[magentic-one,openai]==0.4.8
+autogen-agentchat
+autogen-ext[magentic-one,openai]
 azure-identity
 python-dotenv
 colorama
 azure.search.documents
+azure.ai.inference
+aiohttp
+chainlit
